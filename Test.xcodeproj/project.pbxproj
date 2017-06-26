@@ -19,6 +19,7 @@
 		4E553C2F1EF8BD4C00BFB4E9 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E553C2E1EF8BD4C00BFB4E9 /* SecondViewController.m */; };
 		4E59B6851F009EF500BEDE9B /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E59B6841F009EF500BEDE9B /* Model.m */; };
 		4E59B6881F009F0B00BEDE9B /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E59B6871F009F0B00BEDE9B /* View.m */; };
+		4E59B68B1F00D03A00BEDE9B /* TestKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E59B68A1F00D03A00BEDE9B /* TestKVO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		4E59B6841F009EF500BEDE9B /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 		4E59B6861F009F0B00BEDE9B /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
 		4E59B6871F009F0B00BEDE9B /* View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View.m; sourceTree = "<group>"; };
+		4E59B6891F00D03A00BEDE9B /* TestKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestKVO.h; sourceTree = "<group>"; };
+		4E59B68A1F00D03A00BEDE9B /* TestKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestKVO.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 				4E59B6871F009F0B00BEDE9B /* View.m */,
 				4E553C2D1EF8BD4C00BFB4E9 /* SecondViewController.h */,
 				4E553C2E1EF8BD4C00BFB4E9 /* SecondViewController.m */,
+				4E59B6891F00D03A00BEDE9B /* TestKVO.h */,
+				4E59B68A1F00D03A00BEDE9B /* TestKVO.m */,
 				4E25C09C1EF73B84000892E6 /* Main.storyboard */,
 				4E25C09F1EF73B84000892E6 /* Assets.xcassets */,
 				4E25C0A11EF73B84000892E6 /* LaunchScreen.storyboard */,
@@ -297,6 +302,7 @@
 				4E553C2F1EF8BD4C00BFB4E9 /* SecondViewController.m in Sources */,
 				4E25C09B1EF73B84000892E6 /* ViewController.m in Sources */,
 				4E25C0C81EF74357000892E6 /* Single.m in Sources */,
+				4E59B68B1F00D03A00BEDE9B /* TestKVO.m in Sources */,
 				4E59B6851F009EF500BEDE9B /* Model.m in Sources */,
 				4E25C0981EF73B84000892E6 /* AppDelegate.m in Sources */,
 				4E25C0951EF73B84000892E6 /* main.m in Sources */,

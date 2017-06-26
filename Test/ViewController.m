@@ -29,6 +29,25 @@
     
     [self.view addSubview:button];
     
+    self.testLabel = [[UILabel alloc]initWithFrame:CGRectMake(100, 360, 100, 40)];
+
+    self.testLabel.backgroundColor = [UIColor redColor];
+    self.testLabel.textColor = [UIColor whiteColor];
+    [self.view addSubview:self.testLabel];
+    
+    self.testKVO = [[TestKVO alloc] init];
+    [self.testKVO addObserver:self forKeyPath:@"num" options: NSKeyValueObservingOptionNew context:nil];
+    
+    
+    UIButton *kvoButton = [UIButton buttonWithType:UIButtonTypeSystem ];
+    [kvoButton setFrame:CGRectMake(100, 450, 100, 40)];
+    [kvoButton setTitle:@"kvo" forState:UIControlStateNormal];
+    [kvoButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [kvoButton addTarget:self action:@selector(kvoButtonPressed:) forControlEvents:UIControlEventTouchDown];
+    
+    [self.view addSubview:kvoButton];
+
+    
     
 }
 
@@ -53,6 +72,17 @@
     [self.navigationController pushViewController:secondView animated:YES];
 }
 
+- (void)kvoButtonPressed:(id)sender{
+    self.testKVO.num += 1;
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+    if ([keyPath isEqualToString:@"num"] && object == self.testKVO) {
+        self.testLabel.text = [NSString stringWithFormat:@"%@",[change valueForKey:@"new"]];
+    }
+}
+
+
 
 
 - (void)showStringWithString:(NSString *)str{
@@ -62,6 +92,7 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    [self removeObserver:self forKeyPath:@"num"];
 }
 
 @end
