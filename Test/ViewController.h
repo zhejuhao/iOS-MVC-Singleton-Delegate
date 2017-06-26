@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SecondViewController.h"
+#import "Single.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<TestDelegate>
+
 
 
 @end
