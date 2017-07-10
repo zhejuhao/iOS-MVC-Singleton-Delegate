@@ -20,6 +20,8 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifitionAction:) name:@"123" object:nil];
     
+
+    
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem ];
     [button setFrame:CGRectMake(100, 250, 100, 40)];
     button.titleLabel.text = @"button";
@@ -46,7 +48,12 @@
     [kvoButton addTarget:self action:@selector(kvoButtonPressed:) forControlEvents:UIControlEventTouchDown];
     
     [self.view addSubview:kvoButton];
-
+    
+    
+//    dispatch_queue_t mainQueue = dispatch_get_main_queue();
+//    dispatch_sync(mainQueue, ^{});
+    
+    
     
     
 }
@@ -69,10 +76,14 @@
     [Single shareSingle].delegate = self;
     [[Single shareSingle] sendString];
     SecondViewController *secondView = [[SecondViewController alloc] init];
+    secondView.callBackBlock = ^(NSString *text){
+        NSLog(@"%@",text);
+    };
     [self.navigationController pushViewController:secondView animated:YES];
 }
 
 - (void)kvoButtonPressed:(id)sender{
+    
     self.testKVO.num += 1;
 }
 

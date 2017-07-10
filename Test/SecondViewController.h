@@ -16,11 +16,16 @@
 //- (void)showStringWithString:(NSString *)str;
 //
 //@end
+
+typedef void(^CallBackBlock)(NSString *text) ;
+
 @interface SecondViewController : UIViewController
 
 //@property(nonatomic,assign) id<TestDelegate> delegate;
 
 @property (nonatomic,retain)View *testView;
 @property (nonatomic,retain)Model *testModel;
+
+@property (nonatomic,copy)CallBackBlock callBackBlock;
 
 @end

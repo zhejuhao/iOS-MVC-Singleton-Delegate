@@ -17,6 +17,7 @@
 		4E25C0B91EF73B84000892E6 /* TestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E25C0B81EF73B84000892E6 /* TestUITests.m */; };
 		4E25C0C81EF74357000892E6 /* Single.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E25C0C71EF74357000892E6 /* Single.m */; };
 		4E553C2F1EF8BD4C00BFB4E9 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E553C2E1EF8BD4C00BFB4E9 /* SecondViewController.m */; };
+		4E55A4371F04AE93003D2A48 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E55A4361F04AE93003D2A48 /* GCDAsyncSocket.m */; };
 		4E59B6851F009EF500BEDE9B /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E59B6841F009EF500BEDE9B /* Model.m */; };
 		4E59B6881F009F0B00BEDE9B /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E59B6871F009F0B00BEDE9B /* View.m */; };
 		4E59B68B1F00D03A00BEDE9B /* TestKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E59B68A1F00D03A00BEDE9B /* TestKVO.m */; };
@@ -60,6 +61,8 @@
 		4E25C0C71EF74357000892E6 /* Single.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Single.m; sourceTree = "<group>"; };
 		4E553C2D1EF8BD4C00BFB4E9 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		4E553C2E1EF8BD4C00BFB4E9 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		4E55A4351F04AE93003D2A48 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		4E55A4361F04AE93003D2A48 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		4E59B6831F009EF500BEDE9B /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		4E59B6841F009EF500BEDE9B /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 		4E59B6861F009F0B00BEDE9B /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
@@ -116,6 +119,8 @@
 		4E25C0921EF73B84000892E6 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				4E55A4351F04AE93003D2A48 /* GCDAsyncSocket.h */,
+				4E55A4361F04AE93003D2A48 /* GCDAsyncSocket.m */,
 				4E25C0961EF73B84000892E6 /* AppDelegate.h */,
 				4E25C0971EF73B84000892E6 /* AppDelegate.m */,
 				4E25C0991EF73B84000892E6 /* ViewController.h */,
@@ -304,6 +309,7 @@
 				4E25C0C81EF74357000892E6 /* Single.m in Sources */,
 				4E59B68B1F00D03A00BEDE9B /* TestKVO.m in Sources */,
 				4E59B6851F009EF500BEDE9B /* Model.m in Sources */,
+				4E55A4371F04AE93003D2A48 /* GCDAsyncSocket.m in Sources */,
 				4E25C0981EF73B84000892E6 /* AppDelegate.m in Sources */,
 				4E25C0951EF73B84000892E6 /* main.m in Sources */,
 			);
